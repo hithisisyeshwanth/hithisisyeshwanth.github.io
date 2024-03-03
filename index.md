@@ -3,7 +3,3 @@
 * Simple Operating System in Rust
 * Personal Website using Gatsby
 * JVM Internals
-
-
-Machine Learning and AI
-* 
