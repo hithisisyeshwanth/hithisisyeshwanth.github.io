@@ -1,10 +1,9 @@
 ---
 title: "Post: Quote"
 categories:
-  - Blog
+  - Machine Learning
 tags:
-  - Post Formats
-  - quote
+  - Large Language Models
 ---
 
 > Only one thing is impossible for God: To find any sense in any copyright law on the planet.

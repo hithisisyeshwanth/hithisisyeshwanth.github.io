@@ -1,10 +1,9 @@
 ---
-title: "Post: Notice"
+title: "Post: Analysis of the Algorithms"
 categories:
-  - Blog
+  - Computer Science
 tags:
-  - Post Formats
-  - notice
+  - Algorithms
 ---
 
 A notice displays information that explains nearby content. Often used to call attention to a particular detail.
