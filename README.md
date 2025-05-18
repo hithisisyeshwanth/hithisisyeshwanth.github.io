@@ -1,3 +1,14 @@
+# Notes to self on this project.
+
+## How-To:
+
+## Bugs:
+
+## To-Do:
+
+---------------------------------------------------------------
+# Notes from the original repo from which this project is generated.
+
 # Minimal Mistakes remote theme starter
 
 Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
