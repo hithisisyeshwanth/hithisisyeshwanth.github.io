@@ -3,4 +3,5 @@ permalink: /interview-prep/
 title: "Interview Prep"
 ---
 
-These are the list of projects I have built and are currently hosted in Github. 
+This page has all the content I consumed and understood to prepare for my interviews.
+This will help me in future as a reference notes to brush up. 
