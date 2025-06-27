@@ -1,5 +1,5 @@
 ---
-title: "Post: Quote"
+title: "Post: Machine Learning 101"
 categories:
   - Machine Learning
 tags:
