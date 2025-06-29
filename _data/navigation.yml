@@ -10,10 +10,6 @@ main:
   - title: "Interview Prep"
     url: /interview-prep/
   - title: "Misc"
-    subfolderitems:
-      - page: "Misc"
-        url: /misc/
-      - page: "Interview Prep"
-        url: /interview-prep/
+    url: /misc/
   - title: "About"
-    url: /about/  
+    url: /about/
