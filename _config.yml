@@ -57,7 +57,7 @@ plugins:
 author:
   name   : "Yeshwanth Neriyanuri"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Creature on a rock slowly falling into a star, which is present in a galaxy slowly moving to collide with another."
+  bio    : "Creature on a rock slowly falling into a star, which is present in a galaxy, which again is slowly moving towards another galaxy to collide."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
