@@ -10,6 +10,8 @@
 3. Add a image.
 4. Add a "Hire Me?" section in the blog.
 5. Add Google Analytics to the site. 
+6. Add Video or Gif of the working projects to the project description.
+7. Include a resume without personal details in the site.
 
 ---------------------------------------------------------------
 # Notes from the original repo from which this project is generated.
