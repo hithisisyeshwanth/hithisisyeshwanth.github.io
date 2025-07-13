@@ -11,5 +11,10 @@ main:
     url: /interview-prep/
   - title: "Misc"
     url: /misc/
+    children:
+      - title: "Drop Down 1"
+        url : /drop-down-1
+      - title: "Drop Down 2"
+        url : /drop-down-2
   - title: "About"
     url: /about/
