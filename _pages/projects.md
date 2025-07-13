@@ -1,6 +1,8 @@
 ---
-permalink: /projects/
 title: "Projects"
+permalink: /projects/
+layout: projects
+author_profile: true
 ---
 
 These are the list of projects I have built and are currently hosted in Github. 

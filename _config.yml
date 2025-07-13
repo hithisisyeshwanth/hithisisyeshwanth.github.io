@@ -16,7 +16,7 @@
 title: Yeshwanth Neriyanuri
 email: hithisisyeshwanth@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A software engineer dedicated to mastering the craft of software development and problem solving across domains.
+  Creature on a rock slowly falling into a star, which is present in a galaxy, which again is slowly moving towards another galaxy to collide.
 github_username: hithisisyeshwanth
 minimal_mistakes_skin: dark
 search: true
@@ -88,6 +88,13 @@ defaults:
   - scope:
       path: "_pages"
       type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: "_projects"
+      type: posts
     values:
       layout: single
       author_profile: true
