@@ -13,6 +13,10 @@
 6. Add Video or Gif of the working projects to the project description.
 7. Include a resume without personal details in the site.
 
+## Posts Ideas
+1. Hashing and Hash Collision Resolution strategies with coding. 
+2. Also, Hashing and collision Resolution strategies implemented in Java and Python.
+
 ---------------------------------------------------------------
 # Notes from the original repo from which this project is generated.
 
