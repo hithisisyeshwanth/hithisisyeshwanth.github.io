@@ -12,6 +12,7 @@
 5. Add Google Analytics to the site. 
 6. Add Video or Gif of the working projects to the project description.
 7. Include a resume without personal details in the site.
+8. Add a post outline.
 
 ## Posts Ideas
 1. Hashing and Hash Collision Resolution strategies with coding. 
