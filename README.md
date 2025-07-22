@@ -15,6 +15,7 @@
 8. Add a post outline.
 9. Add LinkedIn to the hyperlinks
 10. Make site SEO Optimized.
+11. Include a Hamberger menu to include other interets like Photography, Touring etc.,
 
 ## Posts Ideas
 1. Hashing and Hash Collision Resolution strategies with coding. 
