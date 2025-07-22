@@ -13,13 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+site.locale: en-US
 title: Yeshwanth Neriyanuri
+# subtitle:
+name: Yeshwanth Sharma Neriyanuri
 email: hithisisyeshwanth@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Creature on a rock slowly falling into a star, which is present in a galaxy, which again is slowly moving towards another galaxy to collide.
+  A Software Engineer, in the path of mastering the craftsmanship of Software Engineering one line at a time.  Leveraging expertise in Machine Learning, AI, and Distributed Systems, my work focuses on solving complex problems with a commitment to precision, performance, and continuous growth.
+# revisit description for SEO related things.
+# masthead_title:
+breadcrumbs: true
+words_per_minute: 250
+enable_copy_code_button: true
+url: "https://hithisisyeshwanth.github.io"
+repository: "hithisisyeshwanth/hithisisyeshwanth.github.io"
 github_username: hithisisyeshwanth
 minimal_mistakes_skin: dark
 search: true
+
 
 # Build settings
 markdown: kramdown
@@ -55,16 +66,18 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Yeshwanth Neriyanuri"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Creature on a rock slowly falling into a star, which is present in a galaxy, which again is slowly moving towards another galaxy to collide."
+  name: "Yeshwanth Neriyanuri"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "Mastering the craftsmanship of software engineering, one elegant line of code at a time."
+  location: "Bengaluru, India"
+  email: hithisisyeshwanth@gmail.com
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://hithisisyeshwanth.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hithisisyeshwanth.github.io"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
 
 footer:
   links:
@@ -84,6 +97,7 @@ defaults:
       comments: true
       share: false
       related: true
+      show_date: true
   # _pages
   - scope:
       path: "_pages"
@@ -105,3 +119,4 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
