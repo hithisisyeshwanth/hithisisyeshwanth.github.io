@@ -3,7 +3,7 @@
 ## How-To:
 
 ## Bugs:
-
+1. Make the photo bigger
 ## To-Do:
 1. Make necessary changes to show project related posts under the "Projects" page.
 2. Curate different articles and give the headings.
