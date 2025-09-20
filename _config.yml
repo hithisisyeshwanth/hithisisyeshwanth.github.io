@@ -13,34 +13,56 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+# The locale of the site.
 site.locale: en-US
+# The title of the site.
 title: Yeshwanth Neriyanuri
+# The subtitle of the site.
 # subtitle:
+# The name of the site owner.
 name: Yeshwanth Sharma Neriyanuri
+# The email of the site owner.
 email: hithisisyeshwanth@gmail.com
+# The description of the site.
 description: >- # this means to ignore newlines until "baseurl:"
   A Software Engineer, in the path of mastering the craftsmanship of Software Engineering one line at a time.  Leveraging expertise in Machine Learning, AI, and Distributed Systems, my work focuses on solving complex problems with a commitment to precision, performance, and continuous growth.
 # revisit description for SEO related things.
+# The title of the masthead.
 # masthead_title:
+# Whether to show breadcrumbs.
 breadcrumbs: true
+# The average number of words per minute for reading time calculation.
 words_per_minute: 250
+# Whether to enable the copy code button.
 enable_copy_code_button: true
+# The URL of the site.
 url: "https://hithisisyeshwanth.github.io"
+# The repository of the site.
 repository: "hithisisyeshwanth/hithisisyeshwanth.github.io"
+# The GitHub username of the site owner.
 github_username: hithisisyeshwanth
+# The skin of the Minimal Mistakes theme.
 minimal_mistakes_skin: dark
+# Whether to enable search.
 search: true
 
 
 # Build settings
+# The Markdown processor.
 markdown: kramdown
+# The remote theme to use.
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
+# The permalink structure for posts.
 permalink: /:categories/:title/
+# The number of posts to show per page.
 paginate: 5 # amount of posts to show
+# The path for paginated pages.
 paginate_path: /page:num/
+# The timezone of the site.
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# The files and directories to include in the build.
 include:
   - _pages
 
@@ -57,6 +79,7 @@ include:
 #   - vendor/ruby/
 
 # Plugins (previously gems:)
+# The plugins to use.
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -65,6 +88,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+# The author information.
 author:
   name: "Yeshwanth Neriyanuri"
   avatar: "/assets/images/bio-photo.jpg"
@@ -79,12 +103,14 @@ author:
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
 
+# The footer links.
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
 
+# The default settings for documents.
 defaults:
   # _posts
   - scope:
@@ -113,9 +139,11 @@ defaults:
       layout: single
       author_profile: true
 
+# The settings for the category archive.
 category_archive:
   type: liquid
   path: /categories/
+# The settings for the tag archive.
 tag_archive:
   type: liquid
   path: /tags/
