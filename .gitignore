@@ -1,4 +1,11 @@
+# Ignore the Jekyll build output directory.
 _site
+
+# Ignore the Sass cache directory.
 .sass-cache
+
+# Ignore Jekyll metadata.
 .jekyll-metadata
+
+# Ignore the Gemfile lock file.
 Gemfile.lock
