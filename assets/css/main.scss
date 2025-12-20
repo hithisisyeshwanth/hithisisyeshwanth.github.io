@@ -22,3 +22,8 @@ $caption-font-family: $sans-serif;
     height: auto;
   }
 }
+
+// Increase font size for author name
+.sidebar .author__name {
+  font-size: $type-size-4 !important; // Was $type-size-5
+}
