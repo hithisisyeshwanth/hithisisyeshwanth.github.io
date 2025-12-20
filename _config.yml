@@ -38,7 +38,7 @@ enable_copy_code_button: true
 # The URL of the site.
 url: "https://hithisisyeshwanth.github.io"
 # The repository of the site.
-repository: "hithisisyeshwanth/hithisisyeshwanth.github.io"
+repository: "https://www.github.com/hithisisyeshwanth/hithisisyeshwanth.github.io"
 # The GitHub username of the site owner.
 github_username: hithisisyeshwanth
 # The skin of the Minimal Mistakes theme.
@@ -97,7 +97,7 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/hithisisyeshwanth.github.io"
+      url: "https://github.com/hithisisyeshwanth/hithisisyeshwanth.github.io"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
