@@ -38,7 +38,7 @@ enable_copy_code_button: true
 # The URL of the site.
 url: "https://hithisisyeshwanth.github.io"
 # The repository of the site.
-repository: "https://www.github.com/hithisisyeshwanth/hithisisyeshwanth.github.io"
+repository: "https://www.github.com/hithisisyeshwanth"
 # The GitHub username of the site owner.
 github_username: hithisisyeshwanth
 # The skin of the Minimal Mistakes theme.
