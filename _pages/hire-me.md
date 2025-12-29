@@ -9,7 +9,7 @@ I am always open to discussing new opportunities, interesting projects, and coll
 
 ### Contact Information
 
-*   **LinkedIn:** [Yeshwanth Sharma Neriyanuri](https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3)
+*   **LinkedIn:** [Yeshwanth Sharma Neriyanuri](https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3){: target="_blank"}
 *   **Email:** [hithisisyeshwanth@gmail.com](mailto:hithisisyeshwanth@gmail.com)
 
 I look forward to hearing from you!
