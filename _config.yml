@@ -24,9 +24,10 @@ name: Yeshwanth Sharma Neriyanuri
 # The email of the site owner.
 email: hithisisyeshwanth@gmail.com
 # The description of the site.
+# description: >- # this means to ignore newlines until "baseurl:"
+#   A Software Engineer, in the path of mastering the craftsmanship of Software Engineering one line at a time.  Leveraging expertise in Machine Learning, AI, and Distributed Systems, my work focuses on solving complex problems with a commitment to precision, performance, and continuous growth.
 description: >- # this means to ignore newlines until "baseurl:"
-  A Software Engineer, in the path of mastering the craftsmanship of Software Engineering one line at a time.  Leveraging expertise in Machine Learning, AI, and Distributed Systems, my work focuses on solving complex problems with a commitment to precision, performance, and continuous growth.
-# revisit description for SEO related things.
+  Software Engineer specializing in Machine Learning, AI, and Distributed Systems. Passionate about software craftsmanship and building high-performance solutions.
 # The title of the masthead.
 # masthead_title:
 # Whether to show breadcrumbs.
