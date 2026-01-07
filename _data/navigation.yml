@@ -9,3 +9,10 @@ main:
     url: /about/
   - title: "Hire Me?"
     url: /hire-me/
+  - title: "Other Interests"
+    url: /other-interests/
+    children:
+      - title: "Photography"
+        url: /photography/
+      - title: "Touring"
+        url: /touring/
