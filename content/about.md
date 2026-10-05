@@ -10,8 +10,6 @@ I'm a software engineer in Bengaluru working at the intersection of distributed 
 
 I've spent eight years building production systems: three in banking and five in networking. Since 2025, I've been investing deliberately in agentic AI: building harnesses, implementing papers, and writing up what I learn here.
 
-> Creature on a rock slowly falling into a star, which is present in a galaxy, which again is slowly moving towards another galaxy to collide eventually.
-
 ## Open to new roles
 
 **Hiring for distributed systems or agent infrastructure?** I'm open to new roles.

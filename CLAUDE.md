@@ -26,7 +26,7 @@ Hugo modules need Go installed. Keep the local Hugo version equal to `HUGO_VERSI
   - `layouts/_markup/render-link.html` makes every external http(s) Markdown link open in a new tab.
   - `assets/css/extended/custom.css` is loaded automatically after the theme CSS. It holds the square profile photo, the menu wrapping, and the styles for the home sections and call to action.
 - **Config** lives entirely in `hugo.toml`: the menu (Writing · Projects · About · Search), the home intro (`params.profileMode`: headline and supporting line), the call to action (`params.cta`), the footer links to the personal pages (`params.footer.text`), social icons and theme flags.
-- **Site structure:** the portfolio (`posts`, `projects`) is in the menu and on the home page. The personal sections (`photography`, `touring`) are linked only from the footer. Their `_index.md` cascades `hiddenInRss: true`, so their posts stay out of the feed. `interview-prep.md` is `draft: true` until it's ready to publish.
+- **Site structure:** the portfolio (`posts`, `projects`) is in the menu and on the home page. The personal sections (`photography`, `motorcycles`) are linked only from the footer. Their `_index.md` cascades `hiddenInRss: true`, so their posts stay out of the feed. `interview-prep.md` is `draft: true` until it's ready to publish.
 - **New projects:** `hugo new projects/<slug>.md` uses `archetypes/projects.md`, a draft with the sections The paper, Implementation, Results (Paper vs Mine table), What I learned and Links.
 - **Content** lives in `content/`:
   - Posts go in `content/posts/YYYY-MM-DD-slug.md`. The filename sets the date and slug (`[frontmatter] date = [":filename", …]`), and the URL is `/posts/:slug/`.

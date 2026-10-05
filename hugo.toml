@@ -71,7 +71,7 @@ enableRobotsTXT = true
 
   # Personal side of the site lives in the footer, away from the portfolio.
   [params.footer]
-    text = "[Photography](/photography/) · [Touring](/touring/)"
+    text = "Beyond software: [Photography](/photography/) · [Motorcycles](/motorcycles/)"
 
   [[params.socialIcons]]
     name = "github"

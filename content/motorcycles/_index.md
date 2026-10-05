@@ -2,7 +2,9 @@
 hiddenInRss: true
 cascade:
   hiddenInRss: true
-title: "Touring"
+title: "Motorcycles"
+aliases:
+  - /touring/
 ---
 
 Coming soon...
