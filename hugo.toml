@@ -36,7 +36,7 @@ enableRobotsTXT = true
 
 [params]
   env = "production"
-  description = "Software Engineer specializing in Machine Learning, AI, and Distributed Systems. Passionate about software craftsmanship and building high-performance solutions."
+  description = "Software engineer building distributed systems, microservices and test harnesses for agentic AI. Paper implementations on reliable backend infrastructure."
   author = "Yeshwanth Neriyanuri"
   defaultTheme = "dark"
   ShowReadingTime = true
@@ -45,24 +45,33 @@ enableRobotsTXT = true
   ShowPostNavLinks = true
   ShowShareButtons = false
   ShowToc = false
+  # Sections that count as the portfolio (used by the theme's lists).
+  mainSections = ["posts", "projects"]
 
+  # The intro at the top of layouts/home.html (rendered by PaperMod's index_profile partial).
   [params.profileMode]
     enabled = true
     title = "Yeshwanth Neriyanuri"
-    subtitle = "Mastering the craftsmanship of software engineering, one elegant line of code at a time. · Bengaluru, India"
+    # Two trailing spaces before \n make a Markdown line break (raw <br> is stripped).
+    subtitle = "**I build the systems that make AI agents reliable.**  \nDistributed backends, microservices, and the harnesses and test suites that keep agentic AI honest in production."
     imageUrl = "images/bio-photo.jpg"
     imageTitle = "Yeshwanth Neriyanuri"
     imageWidth = 200
     imageHeight = 200
-    [[params.profileMode.buttons]]
-      name = "Posts"
-      url = "/posts/"
-    [[params.profileMode.buttons]]
-      name = "Projects"
-      url = "/projects/"
-    [[params.profileMode.buttons]]
-      name = "About Me"
-      url = "/about/"
+
+  # Call to action at the bottom of the home page (layouts/home.html).
+  [params.cta]
+    text = "**Hiring for distributed systems or agent infrastructure?** I'm open to new roles."
+    [[params.cta.links]]
+      name = "LinkedIn"
+      url = "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
+    [[params.cta.links]]
+      name = "Email"
+      url = "mailto:hithisisyeshwanth@gmail.com"
+
+  # Personal side of the site lives in the footer, away from the portfolio.
+  [params.footer]
+    text = "[Photography](/photography/) · [Touring](/touring/)"
 
   [[params.socialIcons]]
     name = "github"
@@ -79,41 +88,18 @@ enableRobotsTXT = true
 
 [menus]
   [[menus.main]]
-    name = "Categories"
-    url = "/categories/"
+    name = "Writing"
+    url = "/posts/"
     weight = 10
   [[menus.main]]
     name = "Projects"
     url = "/projects/"
     weight = 20
   [[menus.main]]
-    name = "Interview Prep"
-    url = "/interview-prep/"
-    weight = 30
-  [[menus.main]]
-    name = "About Me"
+    name = "About"
     url = "/about/"
-    weight = 40
-  [[menus.main]]
-    name = "Hire Me?"
-    url = "/hire-me/"
-    weight = 50
-  [[menus.main]]
-    identifier = "other-interests"
-    name = "Other Interests"
-    url = "/other-interests/"
-    weight = 60
-  [[menus.main]]
-    parent = "other-interests"
-    name = "Photography"
-    url = "/photography/"
-    weight = 1
-  [[menus.main]]
-    parent = "other-interests"
-    name = "Touring"
-    url = "/touring/"
-    weight = 2
+    weight = 30
   [[menus.main]]
     name = "Search"
     url = "/search/"
-    weight = 70
+    weight = 40

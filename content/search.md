@@ -1,4 +1,5 @@
 ---
+hiddenInRss: true
 title: "Search"
 layout: search
 url: /search/

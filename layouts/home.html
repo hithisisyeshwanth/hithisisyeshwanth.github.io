@@ -1,0 +1,51 @@
+{{- /*
+  Portfolio home page: intro, then featured projects, then latest writing.
+  Replaces PaperMod's home (list.html), which shows either the profile or a post list, not both.
+  A project is featured with `featured: true` in its front matter; with none featured, the newest ones show.
+*/ -}}
+{{- define "main" }}
+
+{{- partial "index_profile.html" . }}
+
+{{- $projects := where site.RegularPages "Section" "projects" }}
+{{- $featured := where $projects "Params.featured" true }}
+{{- if not $featured }}{{ $featured = $projects }}{{ end }}
+<section class="home-section">
+  <h2 class="home-section-title">
+    Projects
+    {{- if $projects }}<a class="home-section-more" href="{{ "projects/" | absLangURL }}">All projects »</a>{{ end }}
+  </h2>
+  {{- range first 3 $featured.ByDate.Reverse }}
+  {{- partial "home_entry.html" . }}
+  {{- else }}
+  <p class="home-section-empty">Paper implementations are on the way.</p>
+  {{- end }}
+</section>
+
+{{- $posts := where site.RegularPages "Section" "posts" }}
+<section class="home-section">
+  <h2 class="home-section-title">
+    Latest writing
+    {{- if $posts }}<a class="home-section-more" href="{{ "posts/" | absLangURL }}">All posts »</a>{{ end }}
+  </h2>
+  {{- range first 5 $posts.ByDate.Reverse }}
+  {{- partial "home_entry.html" . }}
+  {{- else }}
+  <p class="home-section-empty">The first post is on the way.</p>
+  {{- end }}
+</section>
+
+{{- with site.Params.cta }}
+<section class="home-cta">
+  <p>{{ .text | markdownify }}</p>
+  {{- with .links }}
+  <div class="buttons">
+    {{- range . }}
+    <a class="button" href="{{ .url }}" {{- if hasPrefix .url "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .name }}</a>
+    {{- end }}
+  </div>
+  {{- end }}
+</section>
+{{- end }}
+
+{{- end }}

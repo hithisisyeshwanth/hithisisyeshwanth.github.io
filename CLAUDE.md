@@ -22,10 +22,12 @@ Hugo modules need Go installed. Keep the local Hugo version equal to `HUGO_VERSI
 
 - **The theme is a module, not vendored.** PaperMod's layouts are not in this repo; they live in Hugo's module cache (`hugo config mounts` prints the path). To change a theme template, copy it to the same path under `layouts/`, which overrides it. Hugo ≥0.146 uses the new template layout: `layouts/_partials/`, `layouts/_markup/`, `layouts/_shortcodes/`, and top-level `single.html`/`list.html`.
 - **Local overrides:**
-  - `layouts/_partials/header.html` is a copy of PaperMod's header. The only change is that the menu loop renders `menus.main` entries that have a `parent` as a hover/focus dropdown. Re-sync it with upstream if PaperMod's header changes.
+  - `layouts/home.html` replaces PaperMod's home page. It shows the intro (reusing the theme's `index_profile.html` partial), then featured projects, then latest posts, then a call to action. Projects marked `featured: true` show first; if none are, the newest 3 show. Each card is drawn by `layouts/_partials/home_entry.html`, which uses the theme's `post-entry` markup.
   - `layouts/_markup/render-link.html` makes every external http(s) Markdown link open in a new tab.
-  - `assets/css/extended/custom.css` is loaded automatically after the theme CSS. It holds the square profile photo and the dropdown styles.
-- **Config** lives entirely in `hugo.toml`: the menu (`[[menus.main]]`, with nesting through `identifier`/`parent`), the home page (PaperMod `profileMode` showing the photo, bio and buttons), social icons and theme flags.
+  - `assets/css/extended/custom.css` is loaded automatically after the theme CSS. It holds the square profile photo, the menu wrapping, and the styles for the home sections and call to action.
+- **Config** lives entirely in `hugo.toml`: the menu (Writing · Projects · About · Search), the home intro (`params.profileMode`: headline and supporting line), the call to action (`params.cta`), the footer links to the personal pages (`params.footer.text`), social icons and theme flags.
+- **Site structure:** the portfolio (`posts`, `projects`) is in the menu and on the home page. The personal sections (`photography`, `touring`) are linked only from the footer. Their `_index.md` cascades `hiddenInRss: true`, so their posts stay out of the feed. `interview-prep.md` is `draft: true` until it's ready to publish.
+- **New projects:** `hugo new projects/<slug>.md` uses `archetypes/projects.md`, a draft with the sections The paper, Implementation, Results (Paper vs Mine table), What I learned and Links.
 - **Content** lives in `content/`:
   - Posts go in `content/posts/YYYY-MM-DD-slug.md`. The filename sets the date and slug (`[frontmatter] date = [":filename", …]`), and the URL is `/posts/:slug/`.
   - `content/projects/` is a section. `_index.md` is the `/projects/` list page.
@@ -33,7 +35,7 @@ Hugo modules need Go installed. Keep the local Hugo version equal to `HUGO_VERSI
   - `archives.md` and `search.md` exist only to switch on PaperMod's archive and search layouts. Search reads `/index.json`, which comes from `[outputs] home`.
   - `categories/_index.md` and `tags/_index.md` only set the titles of the taxonomy pages that Hugo generates automatically.
 - **Images** that the theme processes, like the profile photo, go in `assets/images/` and are referenced as `images/...`. Files that should be served unchanged go in `static/`.
-- **URL compatibility with the old Jekyll site:** `aliases:` in post front matter redirect the old Jekyll URLs, and `[outputFormats.RSS] baseName = "feed"` keeps the feed at `/feed.xml`.
+- **URL compatibility with the old Jekyll site:** `aliases:` in front matter redirect retired URLs (for example, `/hire-me/` redirects to About), and `[outputFormats.RSS] baseName = "feed"` keeps the feed at `/feed.xml`.
 - **Markdown** is rendered by Goldmark. Kramdown-style attributes like `{: target="_blank"}` don't work, and raw HTML is stripped unless `markup.goldmark.renderer.unsafe` is enabled.
 
 ## Notes

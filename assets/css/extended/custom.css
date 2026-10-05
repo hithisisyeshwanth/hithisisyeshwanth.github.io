@@ -5,39 +5,52 @@
     border-radius: 0;
 }
 
-/* Dropdown for nested menu entries (see layouts/_partials/header.html).
-   PaperMod's menu scrolls horizontally, which would clip the dropdown,
-   so let it wrap instead. */
+/* Let the menu wrap onto a second line on narrow screens
+   instead of PaperMod's default horizontal scroll. */
 .menu {
-    overflow: visible;
     flex-wrap: wrap;
 }
 
-.menu .has-submenu {
-    position: relative;
+/* Home page sections (layouts/home.html). The profile intro is normally
+   full-screen; shrink it so projects and writing show above the fold. */
+.main .profile {
+    min-height: 0;
+    padding: calc(var(--gap) * 2) 0 var(--gap);
 }
 
-.menu .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 10;
-    min-width: 160px;
-    margin: 0;
-    padding: 0.4rem 0;
-    list-style: none;
-    line-height: 2.4;
+.home-section {
+    margin-top: calc(var(--gap) * 2);
+}
+
+.home-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--gap);
+    font-size: 24px;
+}
+
+.home-section-more {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.home-section-empty {
+    color: var(--secondary);
+}
+
+/* Call to action at the bottom of the home page. */
+.home-cta {
+    margin-top: calc(var(--gap) * 2);
+    padding: var(--gap);
+    text-align: center;
     background: var(--entry);
     border: 1px solid var(--border);
     border-radius: var(--radius);
 }
 
-.menu .has-submenu:hover .submenu,
-.menu .has-submenu:focus-within .submenu {
-    display: block;
-}
-
-.menu .submenu a {
-    padding: 0 1rem;
+.home-cta .buttons {
+    max-width: none;
+    margin-top: var(--gap);
 }
