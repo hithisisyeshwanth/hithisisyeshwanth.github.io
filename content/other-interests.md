@@ -1,8 +1,6 @@
 ---
 title: "Other Interests"
-permalink: /other-interests/
-layout: single
-author_profile: true
+url: /other-interests/
 ---
 
 Here are some of my other interests:

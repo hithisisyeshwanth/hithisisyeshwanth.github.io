@@ -1,6 +1,8 @@
 ---
 title: "Welcome to Jekyll"
 date: 2025-05-07T15:34:30-04:00
+aliases:
+  - "/mechanical engineering/welcome-to-jekyll/"
 categories:
   - Mechanical Engineering
 tags:

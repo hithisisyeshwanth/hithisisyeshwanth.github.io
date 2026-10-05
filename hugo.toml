@@ -1,0 +1,119 @@
+baseURL = "https://hithisisyeshwanth.github.io/"
+locale = "en-US"
+title = "Yeshwanth Neriyanuri"
+enableEmoji = true
+enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
+# Posts take their date from the YYYY-MM-DD- filename prefix when front matter has none.
+[frontmatter]
+  date = [":filename", ":default"]
+
+[permalinks]
+  posts = "/posts/:slug/"
+  projects = "/projects/:slug/"
+
+[pagination]
+  pagerSize = 5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Home also emits index.json, which powers the /search/ page.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Keep the feed at /feed.xml, where Jekyll published it.
+[outputFormats.RSS]
+  baseName = "feed"
+
+[markup.highlight]
+  style = "monokai"
+
+[params]
+  env = "production"
+  description = "Software Engineer specializing in Machine Learning, AI, and Distributed Systems. Passionate about software craftsmanship and building high-performance solutions."
+  author = "Yeshwanth Neriyanuri"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowShareButtons = false
+  ShowToc = false
+
+  [params.profileMode]
+    enabled = true
+    title = "Yeshwanth Neriyanuri"
+    subtitle = "Mastering the craftsmanship of software engineering, one elegant line of code at a time. · Bengaluru, India"
+    imageUrl = "images/bio-photo.jpg"
+    imageTitle = "Yeshwanth Neriyanuri"
+    imageWidth = 200
+    imageHeight = 200
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+    [[params.profileMode.buttons]]
+      name = "Projects"
+      url = "/projects/"
+    [[params.profileMode.buttons]]
+      name = "About Me"
+      url = "/about/"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hithisisyeshwanth/hithisisyeshwanth.github.io"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hithisisyeshwanth@gmail.com"
+
+  [params.fuseOpts]
+    keys = ["title", "permalink", "summary", "content"]
+
+[menus]
+  [[menus.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 10
+  [[menus.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menus.main]]
+    name = "Interview Prep"
+    url = "/interview-prep/"
+    weight = 30
+  [[menus.main]]
+    name = "About Me"
+    url = "/about/"
+    weight = 40
+  [[menus.main]]
+    name = "Hire Me?"
+    url = "/hire-me/"
+    weight = 50
+  [[menus.main]]
+    identifier = "other-interests"
+    name = "Other Interests"
+    url = "/other-interests/"
+    weight = 60
+  [[menus.main]]
+    parent = "other-interests"
+    name = "Photography"
+    url = "/photography/"
+    weight = 1
+  [[menus.main]]
+    parent = "other-interests"
+    name = "Touring"
+    url = "/touring/"
+    weight = 2
+  [[menus.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 70

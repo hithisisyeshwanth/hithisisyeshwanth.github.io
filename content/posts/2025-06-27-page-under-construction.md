@@ -1,6 +1,8 @@
 ---
 title: "Post: Page Under Construction"
-last_modified_at: 2025-06-27T16:20:02-05:00
+lastmod: 2025-06-27T16:20:02-05:00
+aliases:
+  - /misc/page-under-construction/
 categories:
   - Misc
 tags:

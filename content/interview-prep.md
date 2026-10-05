@@ -1,5 +1,5 @@
 ---
-permalink: /interview-prep/
+url: /interview-prep/
 title: "Interview Prep"
 ---
 

@@ -1,18 +1,16 @@
-# Ignore the Jekyll build output directory.
+# Hugo build output and caches.
+public/
+resources/_gen/
+.hugo_build.lock
+
+# macOS.
+.DS_Store
+
+# Leftovers from the Jekyll site (kept so switching to jekyll-stable stays clean).
 _site
-
-# Ignore the Sass cache directory.
 .sass-cache
-
-# Ignore Jekyll metadata.
 .jekyll-metadata
-
-# Ignore the Gemfile lock file.
 Gemfile.lock
-
 .bundle
-
 vendor
-
 jekyll.log
-

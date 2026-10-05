@@ -1,8 +1,6 @@
 ---
-permalink: /about/
+url: /about/
 title: "About Me"
-layout: single
-author_profile: true
 ---
 
 Hey! Thank you for visiting my page. 

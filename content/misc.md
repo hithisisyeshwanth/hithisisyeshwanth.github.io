@@ -1,5 +1,5 @@
 ---
-permalink: /misc/
+url: /misc/
 title: "Miscellaneous"
 ---
 

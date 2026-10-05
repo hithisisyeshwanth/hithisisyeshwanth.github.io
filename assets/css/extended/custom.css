@@ -1,0 +1,43 @@
+/* PaperMod loads every file in assets/css/extended/ after its own styles. */
+
+/* Square profile photo (ported from the Jekyll .author__avatar override). */
+.profile .profile_inner img {
+    border-radius: 0;
+}
+
+/* Dropdown for nested menu entries (see layouts/_partials/header.html).
+   PaperMod's menu scrolls horizontally, which would clip the dropdown,
+   so let it wrap instead. */
+.menu {
+    overflow: visible;
+    flex-wrap: wrap;
+}
+
+.menu .has-submenu {
+    position: relative;
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    min-width: 160px;
+    margin: 0;
+    padding: 0.4rem 0;
+    list-style: none;
+    line-height: 2.4;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.menu .has-submenu:hover .submenu,
+.menu .has-submenu:focus-within .submenu {
+    display: block;
+}
+
+.menu .submenu a {
+    padding: 0 1rem;
+}
