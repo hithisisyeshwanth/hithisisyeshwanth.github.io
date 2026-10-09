@@ -1,0 +1,105 @@
+baseURL = "https://hithisisyeshwanth.github.io/"
+locale = "en-US"
+title = "Yeshwanth Neriyanuri"
+enableEmoji = true
+enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
+# Posts take their date from the YYYY-MM-DD- filename prefix when front matter has none.
+[frontmatter]
+  date = [":filename", ":default"]
+
+[permalinks]
+  posts = "/posts/:slug/"
+  projects = "/projects/:slug/"
+
+[pagination]
+  pagerSize = 5
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Home also emits index.json, which powers the /search/ page.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Keep the feed at /feed.xml, where Jekyll published it.
+[outputFormats.RSS]
+  baseName = "feed"
+
+[markup.highlight]
+  style = "monokai"
+
+[params]
+  env = "production"
+  description = "Software engineer building distributed systems, microservices and test harnesses for agentic AI. Paper implementations on reliable backend infrastructure."
+  author = "Yeshwanth Neriyanuri"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowShareButtons = false
+  ShowToc = false
+  # Sections that count as the portfolio (used by the theme's lists).
+  mainSections = ["posts", "projects"]
+
+  # The intro at the top of layouts/home.html (rendered by PaperMod's index_profile partial).
+  [params.profileMode]
+    enabled = true
+    title = "Yeshwanth Neriyanuri"
+    # Two trailing spaces before \n make a Markdown line break (raw <br> is stripped).
+    subtitle = "**I build the systems that make AI agents reliable.**  \nDistributed backends, microservices, and the harnesses and test suites that keep agentic AI honest in production."
+    imageUrl = "images/bio-photo.jpg"
+    imageTitle = "Yeshwanth Neriyanuri"
+    imageWidth = 200
+    imageHeight = 200
+
+  # Call to action at the bottom of the home page (layouts/home.html).
+  [params.cta]
+    text = "**Hiring for distributed systems or agent infrastructure?** I'm open to new roles."
+    [[params.cta.links]]
+      name = "LinkedIn"
+      url = "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
+    [[params.cta.links]]
+      name = "Email"
+      url = "mailto:hithisisyeshwanth@gmail.com"
+
+  # Personal side of the site lives in the footer, away from the portfolio.
+  [params.footer]
+    text = "Beyond software: [Photography](/photography/) · [Motorcycles](/motorcycles/)"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hithisisyeshwanth/hithisisyeshwanth.github.io"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://in.linkedin.com/in/yeshwanth-sharma-neriyanuri-3a9590a3"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:hithisisyeshwanth@gmail.com"
+
+  [params.fuseOpts]
+    keys = ["title", "permalink", "summary", "content"]
+
+[menus]
+  [[menus.main]]
+    name = "Writing"
+    url = "/posts/"
+    weight = 10
+  [[menus.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 20
+  [[menus.main]]
+    name = "About"
+    url = "/about/"
+    weight = 30
+  [[menus.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 40

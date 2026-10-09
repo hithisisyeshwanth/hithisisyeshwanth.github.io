@@ -1,0 +1,56 @@
+/* PaperMod loads every file in assets/css/extended/ after its own styles. */
+
+/* Square profile photo (ported from the Jekyll .author__avatar override). */
+.profile .profile_inner img {
+    border-radius: 0;
+}
+
+/* Let the menu wrap onto a second line on narrow screens
+   instead of PaperMod's default horizontal scroll. */
+.menu {
+    flex-wrap: wrap;
+}
+
+/* Home page sections (layouts/home.html). The profile intro is normally
+   full-screen; shrink it so projects and writing show above the fold. */
+.main .profile {
+    min-height: 0;
+    padding: calc(var(--gap) * 2) 0 var(--gap);
+}
+
+.home-section {
+    margin-top: calc(var(--gap) * 2);
+}
+
+.home-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: var(--gap);
+    font-size: 24px;
+}
+
+.home-section-more {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.home-section-empty {
+    color: var(--secondary);
+}
+
+/* Call to action at the bottom of the home page. */
+.home-cta {
+    margin-top: calc(var(--gap) * 2);
+    padding: var(--gap);
+    text-align: center;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.home-cta .buttons {
+    max-width: none;
+    margin-top: var(--gap);
+}

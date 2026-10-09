@@ -1,0 +1,8 @@
+{{- /* Open external links in a new tab (replaces kramdown's {: target="_blank"}). */ -}}
+{{- $u := urls.Parse .Destination -}}
+<a href="{{ .Destination | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end }}
+  {{- if in (slice "http" "https") $u.Scheme }} target="_blank" rel="noopener noreferrer"{{ end }}>
+  {{- .Text -}}
+</a>
+{{- /* chomp trailing newline */ -}}
