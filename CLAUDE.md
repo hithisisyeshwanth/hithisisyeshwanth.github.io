@@ -6,7 +6,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A personal blog/portfolio site (https://hithisisyeshwanth.github.io) built with **Hugo** and the **PaperMod** theme. PaperMod is imported as a Hugo module. GitHub Actions (`.github/workflows/hugo.yml`) builds and deploys the site to GitHub Pages on every push to `master`. There is no test suite.
 
-The site used to be Jekyll (Minimal Mistakes). The last Jekyll version is kept on the `jekyll-stable` branch.
+The site used to be Jekyll (Minimal Mistakes). The last Jekyll version is kept on the `jekyll-stable` branch and tagged `jekyll-final` (`19b78cf`).
+
+## Deployment and rollback
+
+Pages is set to `build_type: workflow`. Only `master` and `jekyll-stable` may deploy to the `github-pages` environment. A failed workflow run leaves the previous deployment live.
+
+To put the old Jekyll site back (takes about 2 minutes, with no git history changes):
+
+```bash
+gh api -X PUT repos/hithisisyeshwanth/hithisisyeshwanth.github.io/pages \
+  -f build_type=legacy -f "source[branch]=jekyll-stable" -f "source[path]=/"
+gh workflow disable "Deploy Hugo site to Pages"
+```
+
+To undo the rollback, run `gh api -X PUT .../pages -f build_type=workflow`, then `gh workflow enable "Deploy Hugo site to Pages"`, then re-run the latest deploy.
 
 ## Commands
 
